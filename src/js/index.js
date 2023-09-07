@@ -12,7 +12,7 @@ const openButton = document.getElementById('openButton');
 // Open page "favourites.html" in new tab
 openButton.addEventListener('click', function () {
     // Navigate to a new page within the same window
-    window.open('favourites.html',"blank"); // Replace with the URL of the page you want to open
+    window.open('public/favourites.html',"blank"); // Replace with the URL of the page you want to open
 });
 
 
@@ -240,7 +240,7 @@ function LoadProduct(x){
         div_m.innerHTML = 
         
         `
-        <a href = "product_detail.html?param1=${x.idMeal}" target = "_blank">
+        <a href = "public/product_detail.html?param1=${x.idMeal}" target = "_blank">
         <img src = ${x.strMealThumb} height = "200" class = "card-img-top">
         <div class = "card-header" style = "height:60px">
             <p>${x.strMeal}</p>
