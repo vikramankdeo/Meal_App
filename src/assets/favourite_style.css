@@ -1,0 +1,21 @@
+#fp_name span {
+    font-size: large;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#fp_category {
+    font-weight: bold;
+}
+
+#fp_category span {
+    font-weight: normal;
+}
+
+#fp_value {
+    font-weight: bold;
+}
+
+#fp_value span {
+    font-weight: normal;
+}

@@ -1,0 +1,221 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#fp_name span {
+    font-size: large;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#fp_category {
+    font-weight: bold;
+}
+#fp_category span {
+    font-weight: normal;
+}
+#fp_value {
+    font-weight: bold;
+}
+#fp_value span {
+    font-weight: normal;
+}
+.loading {
+            display: block;
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            /* text-align: center; */
+            /* padding-top: 20%; */
+        }
+
+        /* Style for the spinner */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #3498db; /* Blue color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+   
+  }
+
+  .name {
+    flex-shrink: 1;
+    font-size: 24px;/* Add some spacing between name and button */
+  }
+
+
+  /* .search-box {
+    padding-top: 10px;
+    width: 50vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  } */
+
+
+
+  .search-button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Active (click) effect */
+    .search-button:active {
+        background-color: #1c6da8;
+    }
+  #m_search {
+    padding: 3px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  .heading_portion {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* flex-basis: 800px; */
+  }
+  #suggestionsList {
+    position: absolute;
+    z-index: 1000;
+    max-height: 200px; /* Limit the height of the suggestion box */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    width: inherit;
+    width: 80%;
+  }
+    /* Styling for options in the datalist */
+    #suggestionsList option {
+    background-color:white;
+    padding: 5px 10px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: smaller;
+    white-space: normal;
+  }
+
+  #suggestionsList option:hover {
+    background-color: #ddd; /* Change this to the desired hover background color */
+  }
+  #search-container {
+    position: absolute;
+    top : 3px;
+    width: 50%;
+    margin-top: 3vh;
+    margin-left: 180px;
+
+    
+  }
+  #searchBox {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+    /* width: 80%; */
+  
+
+  .search-box:focus {
+    outline: none; /* Remove the default focus outline (for accessibility) */
+    border-color: #007bff; /* Change the border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow when focused */
+}
+
+
+
+
+  @media (max-width: 600px) {
+
+    .name {
+      margin-right: 0;
+       /* Reset margin */
+    }
+    .heading_portion {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* flex-basis: 800px; */
+  }
+
+    #search-container {
+        
+        top:50px;
+        left: 0px;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    #searchBox {
+        margin-top: 1%;
+        left: 0px;
+        width: 100%;
+    }
+    .search-button {
+    margin: 0px;
+    padding: 2px 5px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    #suggestionsList {
+    position: absolute;
+    z-index: 1000;
+    top : 30px;
+    max-height: 200px; /* Limit the height of the suggestion box */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    width: inherit;
+    width: 100%;
+  }
+  #m_search {
+    margin-top: 3px;
+    padding: 3px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+    #main_body{
+        position: relative;
+        top:20px;
+        margin-top: 50px;
+        width: 100%;
+    }
+   
+  }

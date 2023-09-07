@@ -1,0 +1,32 @@
+#meal_details {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+#meal_v {
+    margin-right: 5%;
+}
+#fp_name span {
+    font-size: large;
+    font-weight: bold;
+    color: #007bff;
+}
+#meal_name {
+    font-weight: bolder;
+    color: #97bde3;
+    font-size: x-large;
+}
+#meal_i {
+}
+#fp_category {
+    font-weight: bold;
+}
+#fp_category span {
+    font-weight: normal;
+}
+#fp_value {
+    font-weight: bold;
+}
+#fp_value span {
+    font-weight: normal;
+}

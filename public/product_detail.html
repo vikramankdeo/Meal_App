@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table Example</title>
+    
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href = "../src/assets/product_detail_style.css" rel = "stylesheet">
+
+</head>
+<body onload="bodyload()">
+    <div id="meal_details" class="d-flex flex-sm-column flex-md-row fles-wrap">
+        <div id="meal_v" class="photo-container">
+            <img height="500px" width="350px">
+            <!-- <iframe width="640" height="360" src="" title="Spicy penne Arrabiata" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div>
+                <button class="btn btn-danger"><span class="bi bi-heart"></span>Play Video</button>
+                <i class="bi-cart" style="font-size: 100px; color: black;"></i>
+            </div>
+        </div>
+        
+        <div id="meal_i">
+            <div>
+                <p id="meal_name"></p>
+                <dt>Category</dt>
+                <dd id="m_category"></dd>
+                <dt>Area</dt>
+                <dd id="m_area"></dd>
+                <dt>Instructions</dt>
+                <dd id="meal_info"></dd>
+            </div>
+            <div id="method">
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap JavaScript (optional, only needed for some features) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src = "../src/js/product_details.js">    </script>
+</body>
+</html>
