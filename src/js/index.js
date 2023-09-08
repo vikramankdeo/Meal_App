@@ -289,6 +289,7 @@ function hidedropdown(){
 
 // This function will get called when user click on "Add to Favourite" Button proivded on card
 function Add_to_favourite(ell){
+    alert("Yooohooo Meal Added as Favourite");
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${ell}`)
     .then(function(res)
     {
