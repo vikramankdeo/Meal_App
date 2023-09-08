@@ -1,3 +1,10 @@
+let vid_id;
+
+function GoToRecipe(){
+    const openurl = vid_id;
+    window.open(openurl,"_blank");
+}
+
 function extractVideoId(url) {
     // Check if the URL includes "watch?v="
     if (url.includes("watch?v=")) {
@@ -13,6 +20,7 @@ function extractVideoId(url) {
     return null;
 }
 
+
 function get_details(ell) {
     console.log("ele is s" + ell);
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${ell}`)
@@ -26,7 +34,7 @@ function get_details(ell) {
         let div_cat = document.getElementById("m_category");
         let div_a = document.getElementById("m_area");
         console.log(data.meals[0].strYoutube);
-        const vid_id = extractVideoId(data.meals[0].strYoutube);
+        vid_id = data.meals[0].strYoutube;
         //div_d.src = `https://www.youtube.com/embed/${vid_id}`;
         div_d.src = data.meals[0].strMealThumb;
         div_d.style.padding = "10px";
@@ -42,9 +50,11 @@ function getQueryParam(paramName) {
     return urlParams.get(paramName);
 }
 
+const searchQuery = getQueryParam("param1");
+
 function bodyload() {
     // document.getElementById("prod_det_main").innerHTML = "";
-    const searchQuery = getQueryParam("param1");
+    //const searchQuery = getQueryParam("param1");
     console.log("query is " + searchQuery);
     get_details(searchQuery);
 }
