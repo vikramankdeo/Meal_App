@@ -46,17 +46,20 @@ download the zip and run LIVE_SERVER.
 ![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/37d087b5-5758-4d6a-a96f-7e0e9eda755e)
 
 
-![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/fe2c72e7-89f8-4703-9c90-6b17aa3de2eb)
+![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/5361c710-a302-4c0f-92a9-13d70810c825)
+
 
 
 🔴 Favourite Section :-
 
-![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/6ad42187-ecc9-4e55-8898-c0fea7c54dc0)
+![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/335d8860-ccce-41a7-8c8a-35e16cb707c2)
+
 
 
 🔴 Recipe Instruction Page :-
 
-![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/32bcc8b1-bd9b-42c1-a594-6b0bbf180070)
+![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/a390c729-cfc7-44d4-961f-1a0527ed4522)
+
 
 
 ---
