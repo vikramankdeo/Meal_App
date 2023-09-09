@@ -44,7 +44,8 @@ download the zip and run LIVE_SERVER.
 
 🔴 Search Results :-
 
-![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/37d087b5-5758-4d6a-a96f-7e0e9eda755e)
+![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/14732096-1cea-45a7-9f69-5e01da4c313a)
+
 
 
 ![image](https://github.com/vikramankdeo/Meal_App/assets/144257125/5361c710-a302-4c0f-92a9-13d70810c825)
