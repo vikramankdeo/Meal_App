@@ -1,13 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const storedObject = JSON.parse(localStorage.getItem('favourite_prod'));
-    if (storedObject) {
-        favourite_prod = storedObject;
-    }
-});
+
 
 var searchTerms = [];
 var products = [];
 var favourite_prod = {};
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (Object.keys(favourite_prod).length === 0) {
+        const storedObject = JSON.parse(localStorage.getItem('favourite_prod'));
+        if (storedObject) {
+            favourite_prod = storedObject;
+        }
+    }
+});
+
 
 function Remove_from_favourite(ell) {
     if (ell in favourite_prod) {

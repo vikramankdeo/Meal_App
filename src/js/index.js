@@ -1,3 +1,21 @@
+
+
+//Storing an object in local storage so that it will keep the object data in memory even after page is refreshed or browser is closed
+document.addEventListener('DOMContentLoaded', function() {
+    const storedObject = JSON.parse(localStorage.getItem('favourite_prod'));
+    if (storedObject) {
+        favourite_prod = storedObject;
+    }
+    });
+
+window.addEventListener('storage', function (e) {
+    const storedObject = JSON.parse(localStorage.getItem('favourite_prod'));
+    if (storedObject) {
+        favourite_prod = storedObject;
+    }
+});
+    
+
 var searchTerms = [];  
 var products = [];
 var flag = 1;
@@ -15,14 +33,6 @@ openButton.addEventListener('click', function () {
     window.open('public/favourites.html',"blank"); // Replace with the URL of the page you want to open
 });
 
-
-// Storing an object in local storage so that it will keep the object data in memory even after page is refreshed or browser is closed
-document.addEventListener('DOMContentLoaded', function() {
-const storedObject = JSON.parse(localStorage.getItem('favourite_prod'));
-if (storedObject) {
-    favourite_prod = storedObject;
-}
-});
 
 
 
@@ -298,12 +308,9 @@ function Add_to_favourite(ell){
         console.log(Object.keys(favourite_prod).length);
         if (!(ell in favourite_prod)){
             favourite_prod[ell] = data;
-            console.log(data);
-            console.log(data.meals[0].strMeal);
-            console.log(favourite_prod[ell].meals[0]);
-            console.log(favourite_prod[ell].meals[0].strMeal);
+            
 
-            localStorage.setItem('favourite_prod', JSON.stringify(favourite_prod));
+            localStorage.setItem("favourite_prod", JSON.stringify(favourite_prod));
             console.log("added once");
         }
     }
