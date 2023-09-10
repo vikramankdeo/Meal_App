@@ -1,4 +1,4 @@
-🪧 Demo          :- https://vikramankdeo.github.io/Meal_App/
+🪧 GIT LINK          :- https://github.com/vikramankdeo/Meal_App.git
 
 🪧 Website Link  :- https://vikramankdeo.github.io/Meal_App/
 
